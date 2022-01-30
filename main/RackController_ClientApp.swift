@@ -11,7 +11,7 @@ import SwiftUI
 struct RackController_ClientApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView()
         }
     }
 }

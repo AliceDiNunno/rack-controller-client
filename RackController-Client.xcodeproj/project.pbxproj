@@ -9,19 +9,35 @@
 /* Begin PBXBuildFile section */
 		005DB64E27A6D15000A0C74A /* RackController_ClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB63E27A6D14E00A0C74A /* RackController_ClientApp.swift */; };
 		005DB64F27A6D15000A0C74A /* RackController_ClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB63E27A6D14E00A0C74A /* RackController_ClientApp.swift */; };
-		005DB65027A6D15000A0C74A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB63F27A6D14E00A0C74A /* ContentView.swift */; };
-		005DB65127A6D15000A0C74A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB63F27A6D14E00A0C74A /* ContentView.swift */; };
+		005DB65027A6D15000A0C74A /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB63F27A6D14E00A0C74A /* AppView.swift */; };
+		005DB65127A6D15000A0C74A /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB63F27A6D14E00A0C74A /* AppView.swift */; };
 		005DB65227A6D15000A0C74A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005DB64027A6D15000A0C74A /* Assets.xcassets */; };
 		005DB65327A6D15000A0C74A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005DB64027A6D15000A0C74A /* Assets.xcassets */; };
+		005DB65F27A6D5C700A0C74A /* InfraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB65E27A6D5C700A0C74A /* InfraView.swift */; };
+		005DB66327A6D91500A0C74A /* AuthenticationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66227A6D91500A0C74A /* AuthenticationClient.swift */; };
+		005DB66427A6D91500A0C74A /* AuthenticationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66227A6D91500A0C74A /* AuthenticationClient.swift */; };
+		005DB66627A6DA8200A0C74A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66527A6DA8200A0C74A /* HomeView.swift */; };
+		005DB66727A6DA8200A0C74A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66527A6DA8200A0C74A /* HomeView.swift */; };
+		005DB66A27A6DD8D00A0C74A /* RackControllerServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66927A6DD8D00A0C74A /* RackControllerServerConfig.swift */; };
+		005DB66B27A6DD8D00A0C74A /* RackControllerServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66927A6DD8D00A0C74A /* RackControllerServerConfig.swift */; };
+		005DB66D27A6EF9200A0C74A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66C27A6EF9100A0C74A /* Configuration.swift */; };
+		005DB66E27A6EF9200A0C74A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66C27A6EF9100A0C74A /* Configuration.swift */; };
+		005DB67027A6F5A300A0C74A /* ServerConfigurationEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66F27A6F5A300A0C74A /* ServerConfigurationEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		005DB63E27A6D14E00A0C74A /* RackController_ClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RackController_ClientApp.swift; sourceTree = "<group>"; };
-		005DB63F27A6D14E00A0C74A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		005DB63F27A6D14E00A0C74A /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		005DB64027A6D15000A0C74A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		005DB64527A6D15000A0C74A /* RackController-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RackController-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005DB64B27A6D15000A0C74A /* RackController-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RackController-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005DB64D27A6D15000A0C74A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		005DB65E27A6D5C700A0C74A /* InfraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraView.swift; sourceTree = "<group>"; };
+		005DB66227A6D91500A0C74A /* AuthenticationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationClient.swift; sourceTree = "<group>"; };
+		005DB66527A6DA8200A0C74A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		005DB66927A6DD8D00A0C74A /* RackControllerServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RackControllerServerConfig.swift; sourceTree = "<group>"; };
+		005DB66C27A6EF9100A0C74A /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		005DB66F27A6F5A300A0C74A /* ServerConfigurationEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfigurationEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,20 +61,22 @@
 		005DB63827A6D14E00A0C74A = {
 			isa = PBXGroup;
 			children = (
-				005DB63D27A6D14E00A0C74A /* Shared */,
+				005DB63D27A6D14E00A0C74A /* main */,
 				005DB64C27A6D15000A0C74A /* macOS */,
 				005DB64627A6D15000A0C74A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		005DB63D27A6D14E00A0C74A /* Shared */ = {
+		005DB63D27A6D14E00A0C74A /* main */ = {
 			isa = PBXGroup;
 			children = (
+				005DB66827A6DD7200A0C74A /* Config */,
+				005DB66027A6D5FB00A0C74A /* Services */,
+				005DB65C27A6D56000A0C74A /* Views */,
 				005DB63E27A6D14E00A0C74A /* RackController_ClientApp.swift */,
-				005DB63F27A6D14E00A0C74A /* ContentView.swift */,
 				005DB64027A6D15000A0C74A /* Assets.xcassets */,
 			);
-			path = Shared;
+			path = main;
 			sourceTree = "<group>";
 		};
 		005DB64627A6D15000A0C74A /* Products */ = {
@@ -76,6 +94,50 @@
 				005DB64D27A6D15000A0C74A /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		005DB65C27A6D56000A0C74A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				005DB65D27A6D57500A0C74A /* InfraView */,
+				005DB63F27A6D14E00A0C74A /* AppView.swift */,
+				005DB66527A6DA8200A0C74A /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		005DB65D27A6D57500A0C74A /* InfraView */ = {
+			isa = PBXGroup;
+			children = (
+				005DB66F27A6F5A300A0C74A /* ServerConfigurationEditView.swift */,
+				005DB65E27A6D5C700A0C74A /* InfraView.swift */,
+			);
+			path = InfraView;
+			sourceTree = "<group>";
+		};
+		005DB66027A6D5FB00A0C74A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				005DB66127A6D71400A0C74A /* RackController */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		005DB66127A6D71400A0C74A /* RackController */ = {
+			isa = PBXGroup;
+			children = (
+				005DB66227A6D91500A0C74A /* AuthenticationClient.swift */,
+			);
+			path = RackController;
+			sourceTree = "<group>";
+		};
+		005DB66827A6DD7200A0C74A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				005DB66927A6DD8D00A0C74A /* RackControllerServerConfig.swift */,
+				005DB66C27A6EF9100A0C74A /* Configuration.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +238,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005DB65027A6D15000A0C74A /* ContentView.swift in Sources */,
+				005DB66A27A6DD8D00A0C74A /* RackControllerServerConfig.swift in Sources */,
+				005DB66327A6D91500A0C74A /* AuthenticationClient.swift in Sources */,
+				005DB66D27A6EF9200A0C74A /* Configuration.swift in Sources */,
+				005DB65027A6D15000A0C74A /* AppView.swift in Sources */,
+				005DB67027A6F5A300A0C74A /* ServerConfigurationEditView.swift in Sources */,
+				005DB65F27A6D5C700A0C74A /* InfraView.swift in Sources */,
+				005DB66627A6DA8200A0C74A /* HomeView.swift in Sources */,
 				005DB64E27A6D15000A0C74A /* RackController_ClientApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,8 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005DB65127A6D15000A0C74A /* ContentView.swift in Sources */,
+				005DB66E27A6EF9200A0C74A /* Configuration.swift in Sources */,
+				005DB65127A6D15000A0C74A /* AppView.swift in Sources */,
+				005DB66727A6DA8200A0C74A /* HomeView.swift in Sources */,
+				005DB66427A6D91500A0C74A /* AuthenticationClient.swift in Sources */,
 				005DB64F27A6D15000A0C74A /* RackController_ClientApp.swift in Sources */,
+				005DB66B27A6DD8D00A0C74A /* RackControllerServerConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
