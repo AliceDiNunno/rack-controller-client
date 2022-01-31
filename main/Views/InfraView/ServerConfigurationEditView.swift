@@ -9,12 +9,12 @@ import Foundation
 import SwiftUI
 
 struct ServerConfigurationEditView: View {
-    @EnvironmentObject var serverConfiguration: Configuration.ServerConfiguration
+    @EnvironmentObject var serverConfiguration: ServerSettings
     
     var body: some View {
         NavigationView {
             Form {
-                TextField("Username", text: $serverConfiguration.value.User)
+                TextField("Username", text: $serverConfiguration.user)
             }
             .navigationBarTitle("Server configuration")
         }

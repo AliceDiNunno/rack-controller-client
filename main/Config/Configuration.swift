@@ -15,7 +15,6 @@ class Configuration {
         
         init(configKey: String) {
             self.configKey = configKey
-             
         }
         
         public func getConfiguration() -> T? {

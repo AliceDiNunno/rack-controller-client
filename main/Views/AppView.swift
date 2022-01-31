@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct AppView: View {
-    @StateObject var serverConfiguration = Configuration.ServerConfiguration()
+    @StateObject private var serverConfiguration = ServerSettings()
     
     var body: some View {
-        if serverConfiguration.hasServerInformations {
-            HomeView()
-        } else {
-            ServerConfigurationEditView()
-        }
+        HStack {
+            if serverConfiguration.hasServerInformations {
+                HomeView()
+            } else {
+                ServerConfigurationEditView()
+            }
+        }.environmentObject(serverConfiguration)
     }
 }
 

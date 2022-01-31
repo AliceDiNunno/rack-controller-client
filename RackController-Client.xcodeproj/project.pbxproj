@@ -18,10 +18,8 @@
 		005DB66427A6D91500A0C74A /* AuthenticationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66227A6D91500A0C74A /* AuthenticationClient.swift */; };
 		005DB66627A6DA8200A0C74A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66527A6DA8200A0C74A /* HomeView.swift */; };
 		005DB66727A6DA8200A0C74A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66527A6DA8200A0C74A /* HomeView.swift */; };
-		005DB66A27A6DD8D00A0C74A /* RackControllerServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66927A6DD8D00A0C74A /* RackControllerServerConfig.swift */; };
-		005DB66B27A6DD8D00A0C74A /* RackControllerServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66927A6DD8D00A0C74A /* RackControllerServerConfig.swift */; };
-		005DB66D27A6EF9200A0C74A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66C27A6EF9100A0C74A /* Configuration.swift */; };
-		005DB66E27A6EF9200A0C74A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66C27A6EF9100A0C74A /* Configuration.swift */; };
+		005DB66A27A6DD8D00A0C74A /* ServerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66927A6DD8D00A0C74A /* ServerSettings.swift */; };
+		005DB66B27A6DD8D00A0C74A /* ServerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66927A6DD8D00A0C74A /* ServerSettings.swift */; };
 		005DB67027A6F5A300A0C74A /* ServerConfigurationEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DB66F27A6F5A300A0C74A /* ServerConfigurationEditView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +33,7 @@
 		005DB65E27A6D5C700A0C74A /* InfraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraView.swift; sourceTree = "<group>"; };
 		005DB66227A6D91500A0C74A /* AuthenticationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationClient.swift; sourceTree = "<group>"; };
 		005DB66527A6DA8200A0C74A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		005DB66927A6DD8D00A0C74A /* RackControllerServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RackControllerServerConfig.swift; sourceTree = "<group>"; };
+		005DB66927A6DD8D00A0C74A /* ServerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSettings.swift; sourceTree = "<group>"; };
 		005DB66C27A6EF9100A0C74A /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		005DB66F27A6F5A300A0C74A /* ServerConfigurationEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfigurationEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,7 +132,7 @@
 		005DB66827A6DD7200A0C74A /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				005DB66927A6DD8D00A0C74A /* RackControllerServerConfig.swift */,
+				005DB66927A6DD8D00A0C74A /* ServerSettings.swift */,
 				005DB66C27A6EF9100A0C74A /* Configuration.swift */,
 			);
 			path = Config;
@@ -238,9 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005DB66A27A6DD8D00A0C74A /* RackControllerServerConfig.swift in Sources */,
+				005DB66A27A6DD8D00A0C74A /* ServerSettings.swift in Sources */,
 				005DB66327A6D91500A0C74A /* AuthenticationClient.swift in Sources */,
-				005DB66D27A6EF9200A0C74A /* Configuration.swift in Sources */,
 				005DB65027A6D15000A0C74A /* AppView.swift in Sources */,
 				005DB67027A6F5A300A0C74A /* ServerConfigurationEditView.swift in Sources */,
 				005DB65F27A6D5C700A0C74A /* InfraView.swift in Sources */,
@@ -253,12 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005DB66E27A6EF9200A0C74A /* Configuration.swift in Sources */,
 				005DB65127A6D15000A0C74A /* AppView.swift in Sources */,
 				005DB66727A6DA8200A0C74A /* HomeView.swift in Sources */,
 				005DB66427A6D91500A0C74A /* AuthenticationClient.swift in Sources */,
 				005DB64F27A6D15000A0C74A /* RackController_ClientApp.swift in Sources */,
-				005DB66B27A6DD8D00A0C74A /* RackControllerServerConfig.swift in Sources */,
+				005DB66B27A6DD8D00A0C74A /* ServerSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
