@@ -31,7 +31,7 @@ class Configuration {
             let encoder = JSONEncoder()
             if let configurationObject = try? encoder.encode(configuration) {
                 defaults.set(configurationObject, forKey: configKey)
-            } 
+            }
         }
     }
 }

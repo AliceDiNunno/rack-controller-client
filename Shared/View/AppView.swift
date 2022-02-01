@@ -15,13 +15,15 @@ struct AppView: View {
             if serverConfiguration.hasServerInformations {
                 HomeView()
             } else {
-                ServerConfigurationEditView()
+                NavigationView {
+                    ServerConfigurationEditView()
+                }
             }
         }.environmentObject(serverConfiguration)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct AppView_Previews: PreviewProvider {
     static var previews: some View {
         AppView()
     }
