@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		00C91E4227AB132700A38098 /* rackcontroller_clientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C91E3227AB132500A38098 /* rackcontroller_clientApp.swift */; };
 		00C91E4327AB132700A38098 /* rackcontroller_clientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C91E3227AB132500A38098 /* rackcontroller_clientApp.swift */; };
-		00C91E4427AB132700A38098 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C91E3327AB132500A38098 /* ContentView.swift */; };
-		00C91E4527AB132700A38098 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C91E3327AB132500A38098 /* ContentView.swift */; };
 		00C91E4627AB132700A38098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C91E3427AB132700A38098 /* Assets.xcassets */; };
 		00C91E4727AB132700A38098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C91E3427AB132700A38098 /* Assets.xcassets */; };
 		00C91E5527AB140100A38098 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C91E5427AB140100A38098 /* Configuration.swift */; };
@@ -27,11 +25,11 @@
 		00C91E6A27AB170900A38098 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C91E5D27AB143B00A38098 /* HomeView.swift */; };
 		00C91E6B27AB171200A38098 /* InfraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C91E6227AB148D00A38098 /* InfraView.swift */; };
 		00C91E6C27AB171500A38098 /* ServerConfigurationEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C91E6427AB149800A38098 /* ServerConfigurationEditView.swift */; };
+		00C91E6F27AB211B00A38098 /* StatusDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C91E6E27AB211B00A38098 /* StatusDot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00C91E3227AB132500A38098 /* rackcontroller_clientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rackcontroller_clientApp.swift; sourceTree = "<group>"; };
-		00C91E3327AB132500A38098 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		00C91E3427AB132700A38098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C91E3927AB132700A38098 /* rackcontroller-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rackcontroller-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C91E3F27AB132700A38098 /* rackcontroller-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rackcontroller-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +41,7 @@
 		00C91E5D27AB143B00A38098 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		00C91E6227AB148D00A38098 /* InfraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraView.swift; sourceTree = "<group>"; };
 		00C91E6427AB149800A38098 /* ServerConfigurationEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfigurationEditView.swift; sourceTree = "<group>"; };
+		00C91E6E27AB211B00A38098 /* StatusDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +79,6 @@
 				00C91E5127AB136200A38098 /* Config */,
 				00C91E5027AB135700A38098 /* Component */,
 				00C91E3227AB132500A38098 /* rackcontroller_clientApp.swift */,
-				00C91E3327AB132500A38098 /* ContentView.swift */,
 				00C91E3427AB132700A38098 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -106,6 +104,7 @@
 		00C91E5027AB135700A38098 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				00C91E6D27AB210C00A38098 /* Status */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -152,6 +151,14 @@
 				00C91E6427AB149800A38098 /* ServerConfigurationEditView.swift */,
 			);
 			path = InfraView;
+			sourceTree = "<group>";
+		};
+		00C91E6D27AB210C00A38098 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				00C91E6E27AB211B00A38098 /* StatusDot.swift */,
+			);
+			path = Status;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,12 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				00C91E6527AB149800A38098 /* ServerConfigurationEditView.swift in Sources */,
+				00C91E6F27AB211B00A38098 /* StatusDot.swift in Sources */,
 				00C91E5A27AB142A00A38098 /* AuthenticationClient.swift in Sources */,
 				00C91E6327AB148D00A38098 /* InfraView.swift in Sources */,
 				00C91E5E27AB143B00A38098 /* HomeView.swift in Sources */,
 				00C91E5527AB140100A38098 /* Configuration.swift in Sources */,
 				00C91E5C27AB143500A38098 /* AppView.swift in Sources */,
-				00C91E4427AB132700A38098 /* ContentView.swift in Sources */,
 				00C91E4227AB132700A38098 /* rackcontroller_clientApp.swift in Sources */,
 				00C91E5727AB140A00A38098 /* ServerSettings.swift in Sources */,
 			);
@@ -273,7 +280,6 @@
 				00C91E6627AB165900A38098 /* Configuration.swift in Sources */,
 				00C91E6C27AB171500A38098 /* ServerConfigurationEditView.swift in Sources */,
 				00C91E6927AB170200A38098 /* AppView.swift in Sources */,
-				00C91E4527AB132700A38098 /* ContentView.swift in Sources */,
 				00C91E6B27AB171200A38098 /* InfraView.swift in Sources */,
 				00C91E4327AB132700A38098 /* rackcontroller_clientApp.swift in Sources */,
 				00C91E6727AB166200A38098 /* ServerSettings.swift in Sources */,

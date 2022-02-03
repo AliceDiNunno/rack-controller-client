@@ -40,7 +40,8 @@ struct ServerConfigurationEditView: View {
         .navigationBarTitle("Server configuration")
         .navigationBarItems(trailing: HStack {
             Button("Done") {
-                print("Done")
+                serverConfiguration.save()
+                serverConfiguration.hasServerInformations = true
             }
         })
     }

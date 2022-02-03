@@ -8,26 +8,35 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var authentication = AuthenticationClient()
+    
     var body: some View {
-        TabView {
-            Text("The content of the first view")
-              .tabItem {
-                 Image(systemName: "square.grid.4x3.fill")
-                 Text("Dashboard")
-               }
+        ZStack {
+            TabView {
+                Text("The content of the first view")
+                  .tabItem {
+                     Image(systemName: "square.grid.4x3.fill")
+                     Text("Dashboard")
+                   }
+                
+                InfraView()
+                  .tabItem {
+                     Image(systemName: "xserve")
+                     Text("Infra")
+                  }
+                
+                Text("The content of the second view")
+                  .tabItem {
+                     Image(systemName: "square.3.layers.3d.down.left")
+                     Text("Projects")
+                   }
+            }
             
-            InfraView()
-              .tabItem {
-                 Image(systemName: "xserve")
-                 Text("Infra")
-              }
-            
-            Text("The content of the second view")
-              .tabItem {
-                 Image(systemName: "square.3.layers.3d.down.left")
-                 Text("Projects")
-               }
-        }
+            VStack {
+                StatusDot()
+                Spacer()
+            }
+        }.environmentObject(authentication)
     }
 }
 
