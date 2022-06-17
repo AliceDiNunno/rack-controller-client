@@ -9,11 +9,13 @@ import Foundation
 import SwiftUI
 
 struct StatusDot: View {
-    @EnvironmentObject var authentication: AuthenticationClient
-    
+    @EnvironmentObject var service: RackControllerClient
+ 
     var body: some View {
-        Circle()
-            .fill((authentication.isConnected ? (authentication.isAuthenticated ? .green : .yellow) : .red))
-            .frame(width: 5, height: 5)
+        if !(service.isConnected && service.isAuthenticated) {
+            Image(systemName: "circle.dashed")
+                .foregroundColor((service.isConnected ? (service.isAuthenticated ? .green : .yellow) : .red))
+                .frame(width: 25, height: 25).padding(15)
+        }
     }
 }

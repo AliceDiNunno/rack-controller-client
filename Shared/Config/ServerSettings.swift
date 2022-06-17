@@ -53,7 +53,6 @@ class ServerSettings: Settings {
     }
     
     override init() {
-        
         self.host = UserDefaults.standard.value(forKey: hostKey) as? String ?? ""
         self.port = UserDefaults.standard.integer(forKey: portKey)
         
@@ -64,7 +63,7 @@ class ServerSettings: Settings {
         
         super.init()
     }
-    
+         
     func save() {
         set(hasServerInformations, forKey: hasServerInformationsKey)
         set(host, forKey: hostKey)

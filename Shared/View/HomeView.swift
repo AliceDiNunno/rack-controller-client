@@ -8,35 +8,44 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject var authentication = AuthenticationClient()
+    @StateObject var client = RackControllerClient()
+    @State private var selection = 2
+    @State private var showingConnectionInformations = false
     
     var body: some View {
         ZStack {
-            TabView {
+            TabView(selection: $selection) {
                 Text("The content of the first view")
                   .tabItem {
                      Image(systemName: "square.grid.4x3.fill")
                      Text("Dashboard")
                    }
+                  .tag(0)
                 
                 InfraView()
                   .tabItem {
                      Image(systemName: "xserve")
                      Text("Infra")
                   }
+                  .tag(1)
                 
-                Text("The content of the second view")
+                ProjectView()
                   .tabItem {
                      Image(systemName: "square.3.layers.3d.down.left")
                      Text("Projects")
                    }
+                  .tag(2)
             }
             
             VStack {
-                StatusDot()
+                StatusDot().onTapGesture {
+                    showingConnectionInformations = true
+                }
                 Spacer()
             }
-        }.environmentObject(authentication)
+        }.sheet(isPresented: $showingConnectionInformations) {
+            ServerConfigurationEditView()
+        }.environmentObject(client)
     }
 }
 

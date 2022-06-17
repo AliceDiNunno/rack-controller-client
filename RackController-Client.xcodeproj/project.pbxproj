@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0041EC4127ADB56D00395C3D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0041EC4027ADB56D00395C3D /* Alamofire */; };
+		0041EC4327ADB79700395C3D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC4227ADB79700395C3D /* Client.swift */; };
+		0041EC4427ADB79700395C3D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC4227ADB79700395C3D /* Client.swift */; };
+		0041EC4627ADB9BD00395C3D /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC4527ADB9BD00395C3D /* Routes.swift */; };
+		0041EC4727ADB9BD00395C3D /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC4527ADB9BD00395C3D /* Routes.swift */; };
+		0041EC4927ADC28800395C3D /* HealthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC4827ADC28800395C3D /* HealthClient.swift */; };
+		0041EC4A27ADC28800395C3D /* HealthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC4827ADC28800395C3D /* HealthClient.swift */; };
+		0041EC4C27AEA0A800395C3D /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC4B27AEA0A800395C3D /* Engine.swift */; };
+		0041EC4D27AEA0A800395C3D /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC4B27AEA0A800395C3D /* Engine.swift */; };
+		0041EC4F27AFD71D00395C3D /* ProjectClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC4E27AFD71C00395C3D /* ProjectClient.swift */; };
+		0041EC5027AFD71D00395C3D /* ProjectClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC4E27AFD71C00395C3D /* ProjectClient.swift */; };
+		0041EC5327AFDADB00395C3D /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC5227AFDADB00395C3D /* ProjectView.swift */; };
+		0041EC5427AFDADB00395C3D /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041EC5227AFDADB00395C3D /* ProjectView.swift */; };
 		00C91E4227AB132700A38098 /* rackcontroller_clientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C91E3227AB132500A38098 /* rackcontroller_clientApp.swift */; };
 		00C91E4327AB132700A38098 /* rackcontroller_clientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C91E3227AB132500A38098 /* rackcontroller_clientApp.swift */; };
 		00C91E4627AB132700A38098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C91E3427AB132700A38098 /* Assets.xcassets */; };
@@ -29,6 +42,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0041EC4227ADB79700395C3D /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		0041EC4527ADB9BD00395C3D /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		0041EC4827ADC28800395C3D /* HealthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthClient.swift; sourceTree = "<group>"; };
+		0041EC4B27AEA0A800395C3D /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		0041EC4E27AFD71C00395C3D /* ProjectClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectClient.swift; sourceTree = "<group>"; };
+		0041EC5227AFDADB00395C3D /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		00C91E3227AB132500A38098 /* rackcontroller_clientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rackcontroller_clientApp.swift; sourceTree = "<group>"; };
 		00C91E3427AB132700A38098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C91E3927AB132700A38098 /* rackcontroller-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rackcontroller-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0041EC4127ADB56D00395C3D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0041EC5127AFDAC800395C3D /* ProjectView */ = {
+			isa = PBXGroup;
+			children = (
+				0041EC5227AFDADB00395C3D /* ProjectView.swift */,
+			);
+			path = ProjectView;
+			sourceTree = "<group>";
+		};
 		00C91E2C27AB132500A38098 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +157,7 @@
 		00C91E5327AB136D00A38098 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0041EC5127AFDAC800395C3D /* ProjectView */,
 				00C91E5F27AB144400A38098 /* InfraView */,
 				00C91E5B27AB143500A38098 /* AppView.swift */,
 				00C91E5D27AB143B00A38098 /* HomeView.swift */,
@@ -140,6 +169,11 @@
 			isa = PBXGroup;
 			children = (
 				00C91E5927AB142A00A38098 /* AuthenticationClient.swift */,
+				0041EC4227ADB79700395C3D /* Client.swift */,
+				0041EC4527ADB9BD00395C3D /* Routes.swift */,
+				0041EC4827ADC28800395C3D /* HealthClient.swift */,
+				0041EC4B27AEA0A800395C3D /* Engine.swift */,
+				0041EC4E27AFD71C00395C3D /* ProjectClient.swift */,
 			);
 			path = RackController;
 			sourceTree = "<group>";
@@ -177,6 +211,9 @@
 			dependencies = (
 			);
 			name = "rackcontroller-client (iOS)";
+			packageProductDependencies = (
+				0041EC4027ADB56D00395C3D /* Alamofire */,
+			);
 			productName = "rackcontroller-client (iOS)";
 			productReference = 00C91E3927AB132700A38098 /* rackcontroller-client.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +262,9 @@
 				Base,
 			);
 			mainGroup = 00C91E2C27AB132500A38098;
+			packageReferences = (
+				0041EC3F27ADB56D00395C3D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 00C91E3A27AB132700A38098 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,13 +300,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				00C91E6527AB149800A38098 /* ServerConfigurationEditView.swift in Sources */,
+				0041EC4C27AEA0A800395C3D /* Engine.swift in Sources */,
 				00C91E6F27AB211B00A38098 /* StatusDot.swift in Sources */,
 				00C91E5A27AB142A00A38098 /* AuthenticationClient.swift in Sources */,
 				00C91E6327AB148D00A38098 /* InfraView.swift in Sources */,
 				00C91E5E27AB143B00A38098 /* HomeView.swift in Sources */,
 				00C91E5527AB140100A38098 /* Configuration.swift in Sources */,
+				0041EC4927ADC28800395C3D /* HealthClient.swift in Sources */,
 				00C91E5C27AB143500A38098 /* AppView.swift in Sources */,
 				00C91E4227AB132700A38098 /* rackcontroller_clientApp.swift in Sources */,
+				0041EC4627ADB9BD00395C3D /* Routes.swift in Sources */,
+				0041EC4327ADB79700395C3D /* Client.swift in Sources */,
+				0041EC5327AFDADB00395C3D /* ProjectView.swift in Sources */,
+				0041EC4F27AFD71D00395C3D /* ProjectClient.swift in Sources */,
 				00C91E5727AB140A00A38098 /* ServerSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,14 +321,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0041EC4A27ADC28800395C3D /* HealthClient.swift in Sources */,
+				0041EC4D27AEA0A800395C3D /* Engine.swift in Sources */,
+				0041EC5027AFD71D00395C3D /* ProjectClient.swift in Sources */,
 				00C91E6827AB169300A38098 /* AuthenticationClient.swift in Sources */,
+				0041EC5427AFDADB00395C3D /* ProjectView.swift in Sources */,
 				00C91E6A27AB170900A38098 /* HomeView.swift in Sources */,
 				00C91E6627AB165900A38098 /* Configuration.swift in Sources */,
 				00C91E6C27AB171500A38098 /* ServerConfigurationEditView.swift in Sources */,
 				00C91E6927AB170200A38098 /* AppView.swift in Sources */,
 				00C91E6B27AB171200A38098 /* InfraView.swift in Sources */,
 				00C91E4327AB132700A38098 /* rackcontroller_clientApp.swift in Sources */,
+				0041EC4727ADB9BD00395C3D /* Routes.swift in Sources */,
 				00C91E6727AB166200A38098 /* ServerSettings.swift in Sources */,
+				0041EC4427ADB79700395C3D /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0041EC3F27ADB56D00395C3D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0041EC4027ADB56D00395C3D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0041EC3F27ADB56D00395C3D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00C91E2D27AB132500A38098 /* Project object */;
 }
